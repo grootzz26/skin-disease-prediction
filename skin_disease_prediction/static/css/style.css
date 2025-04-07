@@ -1,0 +1,245 @@
+/* Main styling for skin disease prediction application */
+
+/* Body and general styles */
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Header and title styling */
+.app-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.app-title {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.app-subtitle {
+    color: #6c757d;
+    font-weight: 300;
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    border: none;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Upload area styling */
+.upload-area {
+    border: 2px dashed #ced4da;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.upload-icon {
+    font-size: 3rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.upload-prompt {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.upload-formats {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Image preview styling */
+.preview-container {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.preview-image {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-controls {
+    margin-top: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e2b37;
+    border-color: #1e2b37;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+/* Loading indicator */
+.loading-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: #2c3e50;
+}
+
+.loading-text {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+/* Prediction results */
+.prediction-box {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.prediction-header {
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #2c3e50;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 0.7rem;
+}
+
+.disease-item {
+    padding: 1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.disease-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.disease-item-1 {
+    background-color: rgba(25, 135, 84, 0.1);
+    border-left: 4px solid #198754;
+}
+
+.disease-item-2 {
+    background-color: rgba(13, 110, 253, 0.1);
+    border-left: 4px solid #0d6efd;
+}
+
+.disease-item-3 {
+    background-color: rgba(108, 117, 125, 0.1);
+    border-left: 4px solid #6c757d;
+}
+
+.disease-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.disease-probability {
+    font-weight: 500;
+    color: #495057;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+/* Error messages */
+.error-container {
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e9ecef;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .upload-area {
+        padding: 2rem 1rem;
+    }
+
+    .app-title {
+        font-size: 1.8rem;
+    }
+
+    .preview-image {
+        max-height: 250px;
+    }
+}
